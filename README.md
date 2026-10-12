@@ -104,17 +104,28 @@ Specific libraries, broker software, and dashboard frameworks will be documented
 ## 7. Testing and Evaluation
 
 The project will be evaluated through controlled test cases rather than assumptions about reliability.
----------------------------------------------------------------------------------------------------------------------
-| Test                          |           What we will verify                                                     |
-|-------------------------------------------------------------------------------------------------------------------|                                              
-| Valid notifications           |           Conforming notifications pass validation.                               |
-| Invalid notifications         |           Malformed or schema-invalid notifications are rejected.                 |
-| Structure preservation        |           Accepted notification structure remains intact through forwarding.      |
-| Message loss                  |           Compare sent and received notification counts.                          |
-| Duplicate delivery            |           Identify repeated notifications using appropriate test identifiers.     |
-| Delivery delay                |           Measure elapsed time between sending and receiving notifications.       |
-| Consumer restart              |           Observe delivery behaviour when the consumer stops and restarts.        |
-|-------------------------------------------------------------------------------------------------------------------| 
+
+### Test 1: Valid Notifications
+Verify that notifications conforming to the supplied YANG model pass validation.
+
+### Test 2: Invalid Notifications
+Verify that malformed or schema-invalid notifications are rejected.
+
+### Test 3: Structure Preservation
+Verify that accepted notification structures remain intact during forwarding.
+
+### Test 4: Message Loss
+Compare the number of notifications sent with the number received.
+
+### Test 5: Duplicate Delivery
+Identify notifications received more than once using appropriate test identifiers.
+
+### Test 6: Delivery Delay
+Measure the elapsed time between sending and receiving notifications.
+
+### Test 7: Consumer Restart
+Observe message-delivery behaviour when the consumer stops and restarts.
+
 The resulting measurements will be used to document the strengths and limitations of the implemented pipeline.
 
 ## 8. Project Value and Expected Impact
