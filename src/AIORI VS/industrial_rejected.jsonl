@@ -1,0 +1,1 @@
+{"notification": {"device": "Motor-03", "temperature_c": "hello", "current_a": 4.5, "rpm": 1400, "vibration_mm_s": 3.5}, "reason": "RawTypeError: {/telemetry-demo:telemetry/temperature_c} expected decimal64 value", "status": "Rejected / Quarantined"}

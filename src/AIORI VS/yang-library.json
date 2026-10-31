@@ -1,0 +1,14 @@
+
+{
+  "ietf-yang-library:modules-state": {
+    "module-set-id": "aiori-demo-001",
+    "module": [
+      {
+        "name": "telemetry-demo",
+        "namespace": "urn:aiori:telemetry-demo",
+        "revision": "",
+        "conformance-type": "implement"
+      }
+    ]
+  }
+}

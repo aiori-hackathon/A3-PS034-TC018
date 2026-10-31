@@ -1,0 +1,3 @@
+{"notification": {"device": "Motor-01", "temperature_c": 72.5, "current_a": 4.2, "rpm": 1450, "vibration_mm_s": 3.2}, "status": "Accepted", "correction": "None"}
+{"notification": {"device": "Motor-02", "temperature_c": 68.4, "current_a": 3.8, "rpm": 1450, "vibration_mm_s": 2.8}, "status": "Accepted after correction", "correction": "Converted RPM text to integer"}
+{"notification": {"device": "Motor-04", "temperature_c": 75.0, "current_a": 5.1, "rpm": 1500, "vibration_mm_s": 2.5}, "status": "Accepted", "correction": "None"}

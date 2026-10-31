@@ -1,0 +1,46 @@
+
+module telemetry-demo {
+    yang-version 1.1;
+    namespace "urn:aiori:telemetry-demo";
+    prefix td;
+
+    description
+        "Industrial motor telemetry model for the AIORI-3 demonstration.";
+
+    container telemetry {
+
+        leaf device {
+            type string;
+            mandatory true;
+        }
+
+        leaf temperature_c {
+            type decimal64 {
+                fraction-digits 2;
+                range "-50..200";
+            }
+            mandatory true;
+        }
+
+        leaf current_a {
+            type decimal64 {
+                fraction-digits 2;
+                range "0..1000";
+            }
+            mandatory true;
+        }
+
+        leaf rpm {
+            type uint32;
+            mandatory true;
+        }
+
+        leaf vibration_mm_s {
+            type decimal64 {
+                fraction-digits 2;
+                range "0..100";
+            }
+            mandatory true;
+        }
+    }
+}
